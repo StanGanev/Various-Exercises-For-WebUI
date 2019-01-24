@@ -21,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    width: 100%
+    max-width: 100%;
 }
 
 a {
@@ -53,10 +53,14 @@ header h1 {
 }
 
 article {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     margin: 0 auto;
-    max-width: 30%;
+}
+
+.text {
+    word-wrap: break-word;
+    padding: 3rem 2rem 5.6rem 2rem;
+    margin: 0 5rem;
 }
 
 form {
@@ -74,23 +78,32 @@ label {
 
 input {
     display: block;
-    flex: 0 0 10%;
-    margin: 0.5rem
+    margin: 0.5rem;
+    margin-right: 0;
+    padding: 0;
+    max-width: 80%;
+    overflow: hidden;
     
 }
 
 form div {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
-input:last-of-type{
+div input {
+
     display: block;
+    justify-self: flex-start;
+    flex: 1;
 }
 
 form a {
     display: block;
+    justify-self: flex-end;
+    flex: 2;
+
 }
 
 footer {
