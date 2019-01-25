@@ -8,24 +8,35 @@ html {
     box-sizing: inherit
 }
 
-
 body {
     margin: 0;
     padding: 0;
-    max-width: 1600px;
-
 }
 
 
 .container {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     text-align: center;
-    max-width: 100%;
+}
+
+section {
+    display: flex;
+    background-color: lightgray;
+    flex: 1;
+    justify-content: center;
+}
+
+footer {
+    background-color: lightblue;
+    bottom: 0;
+    left: 0;
 }
 
 a {
     text-decoration: none;
+    color: blue;
 }
 
 nav {
@@ -43,31 +54,28 @@ nav ul li {
     margin: 0;
 }
 
+nav ul li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+}
+
 li:first-child {
     margin-right: auto
 }
 
-header h1 {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-article {
-    display: inline-block;
-    margin: 0 auto;
-}
-
-.text {
-    word-wrap: break-word;
-    padding: 3rem 2rem 5.6rem 2rem;
-    margin: 0 5rem;
+h2 {
+    margin-top: 2rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid black;
+    border-radius: 0.5rem;
+    border-top: 0.5rem solid lightblue;
+    background-color: whitesmoke;
+    max-height: 50%;
 }
 
 label {
@@ -93,21 +101,11 @@ form div {
 }
 
 div input {
-
-    display: block;
     justify-self: flex-start;
     flex: 1;
 }
 
 form a {
-    display: block;
     justify-self: flex-end;
     flex: 2;
-
-}
-
-footer {
-    background-color: lightblue;
-    bottom: 0;
-    left: 0;
 }
